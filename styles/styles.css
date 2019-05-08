@@ -1,0 +1,261 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #bf9fee;
+}
+
+/* font-family: 'Montserrat', sans-serif; for whole texts */
+/* font-family: 'Indie Flower', cursive; for Shayan's name */
+/* font-family: 'Raleway', sans-serif; for headings and titles  */
+
+/* Top Navigation Bar */
+
+
+.navbar a {
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.navbar {
+    background-color: #bf9fee;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Profile name, picture and profession */
+
+.name {
+    padding-top: 7%;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
+}
+.name {
+    animation: pulse 5s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        color: #113f67;
+    }
+    25% {
+        color: #226597;
+    }
+    50% {
+        color: #87c0cd;
+    }
+    100% {
+        color: #113f67;
+    }
+}
+
+.picture {
+    width: 15%;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.positionTitle {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+
+}
+
+
+/* About me  */
+
+
+.about-me {
+    background-color: rgba(204, 221, 255, 0.6);
+    text-align: center;
+    width: 50%;
+    padding: 2%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.info p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:  bold;
+    margin-bottom: 0 !important;
+
+}
+
+/* divider */
+
+.divider {  /* minor cosmetics */
+    font-family: 'Raleway', sans-serif;
+    display: table;
+    font-size: 24px;
+    text-align: center;
+    width: 75%; 						/* divider width */
+    margin: 5% auto;					/* spacing above/below */
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 13px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#4c0045));
+    background-image: -webkit-linear-gradient(180deg, transparent, #4c0045);
+    background-image: -moz-linear-gradient(180deg, transparent, #4c0045);
+    background-image: -o-linear-gradient(180deg, transparent, #4c0045);
+    background-image: linear-gradient(90deg, transparent, #4c0045);
+}
+.divider span:nth-child(2) {
+    color: #000; padding: 0 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4c0045), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #4c0045, transparent);
+    background-image: -moz-linear-gradient(180deg, #4c0045, transparent);
+    background-image: -o-linear-gradient(180deg, #4c0045, transparent);
+    background-image: linear-gradient(90deg, #4c0045, transparent);
+}
+
+/* Working experience
+
+*/
+.experience {
+    width: auto;
+}
+.workhistory {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+#leftcolumn, #rightcolumn {
+    float: left;
+    min-height: 150px;
+}
+#leftcolumn {
+    width: 20%;
+}
+#rightcolumn {
+    width: 80%;
+    margin: auto;
+
+}
+
+ul {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+#skills{
+    text-align:center;
+    padding-top:70px;
+    padding-bottom: 15px;
+    margin: auto;
+
+}
+
+#skillsList {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    padding-top: 5%;
+
+}
+
+.container {
+    display: flex;
+    padding-top: 10px;
+
+}
+
+.container > div {
+    flex: 1; /*grow*/
+}
+
+
+
+
+.educationinfo {
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding: 25px;
+    padding-top: 30px;
+}
+
+.contact-info {
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding: 25px;
+    padding-top: 30px;
+}
+
+#contact {
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+    padding-top: 60px;
+}
+#contact a{
+    color: black;
+    text-decoration: none;
+}
+.contact-info a {
+    text-decoration: none;
+}
+.resume {
+    text-align: center;
+}
+.resume a {
+    margin: 1%;
+}
+.i {
+    margin-left: 10px;
+    font-size: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    font-size: 9pt;
+    padding-bottom: 1px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    color: blueviolet;
+}
